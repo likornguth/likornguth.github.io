@@ -161,7 +161,7 @@ html{
  
 }
 
-.days button:hover:not(.null){
+.days button:hover:not(.null, .arrow, .leftarrow){
     background-color: #B8BB3D;
     /*border: 0.2rem solid #eee;*/
     border: 2px solid #BA2027 ;
@@ -338,6 +338,31 @@ html{
     position: relative;
     transition: all 5s ease-in-out;
   }
+
+  .overlay .leftarrow {
+    position: fixed;
+    margin: 0px 900px 85px 0px;
+    transition: all 200ms;
+    font-size: 100px;
+    color: #8A1B28;
+    border: none;
+    background: none;
+  }
+
+  .overlay .arrow {
+    position: fixed;
+    margin: 0px 0px 85px 900px;
+    transition: all 200ms;
+    font-size: 100px;
+    color: #8A1B28;
+    border: none;
+    background: none;
+  }
+
+  .overlay button:hover {
+    color:#B8BB3D;
+  }
+
   
   .overlay h2 {
     margin-top: 0;
@@ -359,6 +384,7 @@ html{
 .close:hover {
     color: #B8BB3D;
   }
+
 .content {
     max-height: 30%;
     overflow: visible;
