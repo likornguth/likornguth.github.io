@@ -94,6 +94,9 @@ h1{
         display: flex;
         justify-content: center;
     }
+    #form {
+        visibility:hidden;
+    }
     
 
   }
